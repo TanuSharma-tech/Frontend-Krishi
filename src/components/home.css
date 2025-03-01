@@ -1,0 +1,170 @@
+/* Background */
+body {
+    background: linear-gradient(to right, #d4edda, #c8e6c9); /* Soft green shades */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */    
+}
+
+/* Main Container */
+.big-container {
+    text-align: center;
+    padding: 30px;
+    background: #f0f8ea;  /* Soft greenish-white background */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 75%;
+    height: auto;
+    margin: 20px auto; /* Adjusted */
+    max-height: 85vh;  /* Limits height to prevent page overflow */
+    overflow-y: auto; /* Allows content scroll inside the container if needed */
+}
+
+/* Category Title */
+.category-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1f4d27;  /* Deep green */
+}
+
+/* Grid Container */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #d8e9a8;  
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(34, 139, 34, 0.4);
+    max-width: 100%;
+    max-height: 60vh; /* Prevents excessive height */
+    overflow-y: auto; /* Enables scrolling inside grid only if needed */
+}
+
+/* Category Items */
+.category-item {
+    width: 600px;  /* Adjusted width */
+    height: 220px; /* Reduced height slightly */
+    position: relative;
+}
+
+/* Category Box */
+.category-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.category-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay Effect */
+.category-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+/* Buttons */
+.nav-btn {
+    background: #2e7d32;  
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Button Hover */
+.nav-btn:hover {
+    background: #1b5e20; 
+    transform: scale(1.1);
+}
+
+.image-container img {
+    width: 100%;  
+    border-radius: 15px;
+}
+
+.button-container button {
+    background: #2E7D32;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.button-container button:hover {
+    background: #1B5E20;
+}
+
+/* Quote styling - moved outside 3rd box */
+.quote-container {
+    text-align: center;
+    margin-top: 20px; /* Added spacing */
+}
+
+/* Quote styling with fade-in animation */
+.quote {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    color: #2d572c;  
+    text-align: center;
+  
+    /* Initially hidden */
+    opacity: 0;
+    transform: translateY(-10px);
+    
+    /* Animation */
+    animation: fadeIn 2s ease-in-out forwards;
+}
+  
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+  
+  
+
+    
+  
+  
+  
+  
+  
+  
+  
+  

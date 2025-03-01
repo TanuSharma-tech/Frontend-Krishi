@@ -1,0 +1,122 @@
+/* 🌿 Background - Dark Green Gradient */
+body {
+    background: linear-gradient(to right, #d4edda, #c8e6c9);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* 📦 Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh; /* Full viewport height */
+    padding: 20px;
+}
+
+/* 🏠 Login Box - Background Image */
+.login-box {
+    background: rgba(255, 255, 255, 0.2); /* Light transparency */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #E4A11B; /* Warm yellow border */
+    max-height: 90vh; /* Prevent overflow */
+    overflow-y: auto;
+    
+    /* 🎨 Background Image Inside Container */
+    background-image: url("https://img.freepik.com/premium-photo/green-leaf-pattern-with-leaves-dark-background_529521-890.jpg?w=360");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 📝 Headings */
+h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #FFD700; /* Gold text */
+    margin-bottom: 15px;
+}
+
+/* 🎯 Input Fields */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #E4A11B; /* Warm yellow */
+    border-radius: 5px;
+    background: #ffffff; /* White for visibility */
+    color: #333; /* Dark grey text */
+    font-size: 16px;
+}
+
+/* ✨ Focus Effect */
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #FFD700; /* Bright gold */
+}
+
+/* 🔑 Login Button */
+.login-button {
+    width: 100%;
+    background-color: #FFD700; /* Gold */
+    color: #333; /* Dark text */
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #E4A11B; /* Warm yellow */
+    color: white;
+}
+
+/* 🔄 Forgot Password Button */
+.forgot-password {
+    width: 100%;
+    background-color: #E4A11B;
+    color: #333; /* Dark text */
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    background-color: #FFD700;
+    color: white;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+    }
+}
+/* Apply white text color to labels */
+label {
+    color: white !important;
+}
+/* Super Bold Error Message */
+.error-message {
+    color: white; /* Bright red */
+    font-size: 16px; /* Increase font size */
+    font-weight: 900; /* Extra bold */
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(250, 250, 250, 0.5); /* Red glow effect */
+}
+
+

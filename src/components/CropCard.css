@@ -1,0 +1,80 @@
+/* Container Styling */
+.crop-card {
+    padding: 16px;
+    border-radius: 16px; /* Rounded corners */
+    background-color: #d8e9a8; /* White background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #ddd; /* Light gray border */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Hover Effect */
+  .crop-card:hover {
+    border: 2px solid #91c503 ; /* Green border on hover */
+    background-color: #dff898; /* Light green background */
+    transform: scale(1.05); /* Slight scale-up effect */
+  }
+  
+  /* Crop Image */
+  .crop-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px; /* Rounded corners for image */
+  }
+  
+  /* Title Styling */
+  .crop-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000; /* Dark Black */
+  }
+  
+  /* Text Details */
+  .crop-card p {
+    color: #000; /* Dark Black */
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  /* Button Styling */
+  .crop-card button {
+    background-color: #3b82f6; /* Blue background */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 12px; /* Rounded button */
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Button Hover Effect */
+  .crop-card button:hover {
+    border: 2px solid #d6e5f8;
+    background-color: #769ff7; /* Darker blue */
+  }
+  /* User Dashboard Heading */
+.dashboard-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #000; /* Dark Black */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #22c55e; /* Green underline */
+}
+
+/* Section Titles (e.g., Available Crops) */
+.section-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000; /* Dark Black */
+  margin: 20px 0 10px;
+  padding-left: 10px;
+  border-left: 5px solid #22c55e; /* Green left border */
+}
+  
+  
