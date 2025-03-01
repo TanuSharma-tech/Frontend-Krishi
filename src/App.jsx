@@ -46,7 +46,7 @@
 import { useState } from "react";
 import "./App.css";
 
-import Meta from "./components/meta";
+//import Meta from "./components/meta";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import { Route, Routes } from "react-router-dom";
