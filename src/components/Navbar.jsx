@@ -96,7 +96,7 @@ import { Link, Outlet } from "react-router-dom";
 import LogoutButton from "./LogoutButton";
 import { Menu, X } from "lucide-react"; // Icon for menu toggle
 import krishiLogo from "../assets/istockphoto-1315470694-1024x1024.jpg"; // Update the path to your logo
-import "./Navbar.css"; // Importing the CSS file
+import "./navbar.css"; // Importing the CSS file
 import { Home, LogIn, UserPlus } from "lucide-react"; 
 
 
