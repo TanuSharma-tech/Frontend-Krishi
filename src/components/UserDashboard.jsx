@@ -2,19 +2,7 @@
 
 
 
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { useParams,useNavigate, Link } from "react-router-dom";
-import CropCard from "./CropCard"; // Component for displaying individual crops
-import Modal from "react-modal"; // Modal for confirmation
-import { useSelector } from "react-redux";
 
-const predefinedCrops = [
-  { name: "Wheat", hindi: "गेंहू" },
-  { name: "Rice", hindi: "चावल" },
-  { name: "Mustard", hindi: "सरसों" },
-  { name: "Corn", hindi: "मक्का" },
-];
 
 
 
@@ -261,7 +249,19 @@ const predefinedCrops = [
 //   );
 // };
 
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useParams,useNavigate, Link } from "react-router-dom";
+import CropCard from "./CropCard"; // Component for displaying individual crops
+import Modal from "react-modal"; // Modal for confirmation
+import { useSelector } from "react-redux";
 
+const predefinedCrops = [
+  { name: "Wheat", hindi: "गेंहू" },
+  { name: "Rice", hindi: "चावल" },
+  { name: "Mustard", hindi: "सरसों" },
+  { name: "Corn", hindi: "मक्का" },
+];
 const UserDashboard = () => {
   const { id } = useParams(); // Extract buyer ID from URL
   const navigate = useNavigate(); // Hook to programmatically navigate
@@ -492,7 +492,8 @@ console.log(highlightedFarmerId);
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         ariaHideApp={false}
-        className="modal text-center mt-[180px] bg-blue-300 border-[4px] pt-[70px] border-black w-[500px]  h-[270px] ml-[450px]"
+        className="modal text-center mt-[180px] bg-blue-300 border-[4px] pt-[70px] border-black w-[500px]  h-[270px] ml-[450px] z-[9999]"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-50"
       >
         <h2 className="text-2xl font-bold">Confirm Order</h2>
         <p className="text-2xl">Are you sure you want to place the order?</p>
@@ -521,4 +522,6 @@ console.log(highlightedFarmerId);
 };
 
 
-export default UserDashboard;
+export default UserDashboard; 
+
+

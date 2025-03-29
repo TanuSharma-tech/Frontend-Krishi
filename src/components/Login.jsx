@@ -262,7 +262,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://krishi-backend-s9wi.onrender.com/auth/login",
+        "http://localhost:5000/auth/login",
         formData
       );
       localStorage.setItem("token", response.data.token);

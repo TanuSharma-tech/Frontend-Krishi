@@ -50,5 +50,4 @@ function BuyPage() {
     </div>
   );
 }
-
 export default BuyPage; 
